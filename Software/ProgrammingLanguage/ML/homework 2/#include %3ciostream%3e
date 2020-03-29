@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+int A(int n){
+	int number=2,i,flag,count=0;
+	while(1){
+		for(i=2;i<number;i++){
+			flag=0;
+			if(number%i==0){
+				flag=1;
+				break;
+			}
+		}
+		if(number==2){
+			flag=0;
+		}
+		if(flag==0){
+			count++;
+			if(count==n){
+				return number;
+			}
+		}
+		number++;
+	}
+}
+void main(){
+	int n,m;
+	while(1){
+	cout<<"请输入一个数n:"; 
+    cin>>n; 
+	m=A(n);
+	cout<<"第"<<n<<"个素数为："<<m<<endl<<endl;
+	}
+}

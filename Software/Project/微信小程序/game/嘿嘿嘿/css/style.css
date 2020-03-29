@@ -1,0 +1,10 @@
+body{
+	width:100%;
+	height:100%;
+}
+#content{
+	width: 375px;
+	height: 667px;
+	background-color: #EF5F72;
+	overflow: hidden;
+}

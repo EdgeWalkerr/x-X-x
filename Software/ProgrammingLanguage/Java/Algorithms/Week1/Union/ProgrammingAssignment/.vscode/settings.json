@@ -1,0 +1,5 @@
+{
+    "python.pythonPath": "/Users/vincent/anaconda3/bin/python",
+    "python.linting.pylintPath": "/Users/vincent/anaconda3/bin/pylint",
+    "python.formatting.autopep8Path": "/Users/vincent/anaconda3/bin/autopep8",
+}

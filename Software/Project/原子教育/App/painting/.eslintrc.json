@@ -1,0 +1,10 @@
+{
+    "extends": "airbnb",
+    "plugins": [
+        "react"
+    ],
+    "rules": {
+      "object-shorthand": 1,
+      "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
+    }
+}

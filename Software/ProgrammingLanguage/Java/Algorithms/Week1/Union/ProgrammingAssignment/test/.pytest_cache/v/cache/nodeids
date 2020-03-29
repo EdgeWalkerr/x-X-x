@@ -1,0 +1,5 @@
+[
+  "test_percolation.py::test_isOpen",
+  "test_percolation.py::test_isFull",
+  "test_percolation.py::test_numberOfOpenSites"
+]

@@ -1,0 +1,36 @@
+.container {
+    overflow: auto;
+    background-color: red;
+}
+
+.child {
+    height: 200px;
+    float: left;
+    background-color: green;
+}
+
+nav {
+    display: flex;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin: 10px 0;
+}
+
+a {
+    margin-right: 20px;
+    margin-bottom: 10px;
+    white-space: nowrap;
+}
+
+/* #triangle {
+    width: 0px;
+    height: 0px;
+    border: 6px solid transparent;
+    border-top: 6px solid red;
+} */
+#triangle {
+    width: 0px;
+    height: 0px;
+    background-color: red;
+    padding: 0 6px;
+}

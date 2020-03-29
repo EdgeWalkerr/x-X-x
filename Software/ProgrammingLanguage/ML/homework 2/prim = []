@@ -1,0 +1,30 @@
+import math
+prim = [2, 3, 5, 7, 11, 13, 17, 19]
+
+def x2xpower(x, prim):
+	boolList = [False] * math.power(x, 2)
+	for i in range(math.power(x, 2)):
+		for item in prim:
+			if (i+1)%item == 0:
+				boolList[i] = True
+	for i in range(math.power(x, 2)):
+		if !boolList[i] and i + 1> x:
+			prim.append(i + 1)
+	return prim
+
+
+def swell(n, x, prim):
+	#有了swell(n-1)值
+	if n = 0:
+		return prim
+	else:
+		prim = x2xpower(x, prim)
+		x = math.power(x,2)
+		n = n - 1
+		swell(n, x, prim)
+
+swell(3, 20, prim)
+
+
+
+
