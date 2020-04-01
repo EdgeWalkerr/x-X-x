@@ -54,22 +54,18 @@ class _LogoAppState extends State<LogoApp> with SingleTickerProviderStateMixin {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
+    return Align(
+      alignment: Alignment.bottomLeft,
+      // align Alignment.bottomLeft,
       child: Container(
         color: Colors.green,
-        width: 200,
-        height: 200,
-        child: Center(
-          child: Padding(
-            padding: const EdgeInsets.all(20),
-            child: Container(
-              color: Colors.red,
-              height: 200,
-              width: 100,
-              child: Center(
-                child: _FlutterLogoList(),
-              ),
-            ),
+        width: 300,
+        height: 300,
+        child: ClipRect(
+          child: Align(
+            alignment: Alignment.topCenter,
+            heightFactor: 0,
+            child: _FlutterLogoList(),
           ),
         ),
       ),
@@ -86,22 +82,20 @@ class _LogoAppState extends State<LogoApp> with SingleTickerProviderStateMixin {
 class _FlutterLogoList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        children: [
-          Container(
-            width: 20,
-            height: 20,
-            color: Colors.indigo,
-          ),
-          Container(
-            width: 20,
-            height: 20,
-            color: Colors.yellow,
-          ),
-        ],
-      ),
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      children: [
+        Container(
+          width: 20,
+          height: 20,
+          color: Colors.indigo,
+        ),
+        Container(
+          width: 20,
+          height: 20,
+          color: Colors.yellow,
+        ),
+      ],
     );
   }
 }
