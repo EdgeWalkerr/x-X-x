@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "toy"
+		},
+		{
+			"path": "redux"
+		},
+		{
+			"path": "react-native-portal"
+		},
+		{
+			"path": "mobx"
+		}
+	],
+	"settings": {}
+}
