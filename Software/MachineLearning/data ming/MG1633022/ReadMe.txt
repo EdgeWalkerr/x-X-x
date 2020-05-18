@@ -1,1 +1,0 @@
-打开终端，进入code所在文件夹，运行python code.py即可 
