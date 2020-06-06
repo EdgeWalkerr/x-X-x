@@ -42,8 +42,11 @@ performance --> loadingPerformance(加载优化)
 																			 loadingOrder --> preloadAndPreFetch(preload preFetch)
 																			 
 																			 
-performance --> renderPerformance(渲染优化):::link
+performance --> render(渲染)
+								render --> renderPerformance(渲染优化):::link
+								render --> renderProcess(渲染过程):::link
 								click renderPerformance "#render performance"
+								click renderProcess "#render progress"
 								
 																			 
 ```
@@ -87,12 +90,12 @@ performance --> renderPerformance(渲染优化):::link
 
 - cache-control
 
-    | No-cache       | 每次请求必须进行验证来决定是否使用                |
-    | -------------- | ------------------------------------------------- |
-    | no-store       | 不缓存                                            |
-    | private        | 浏览器可以缓存， 但是无法被中间件缓存， 比如proxy |
-    | public         | 响应可以被缓存                                    |
-    | max-age=233223 | 多少秒后失效                                      |
+    | No-cache       | 每次请求必须进行验证来决定是否使用                           |
+    | -------------- | ------------------------------------------------------------ |
+    | no-store       | 不缓存                                                       |
+    | private        | 浏览器可以缓存， 但是无法被中间件缓存， 比如proxy, isp不允许缓存 |
+    | public         | 响应可以被公开缓存                                           |
+    | max-age=233223 | 多少秒后失效                                                 |
 
     ```tsx
     Cache-Controller: public, max-age=31536000
@@ -143,6 +146,15 @@ versioned URLs
 
 ### render performance
 
+![image-20200522160524846](/Users/vincent/Library/Application Support/typora-user-images/image-20200522160524846.png)
+
+1. 使用requsetFrameAnimation 来执行动画
+2. 避免深层查找css属性， 可以尝试使用性能更优的BEM方案
+3. 避免强制同步布局
+4. 在合成层上面如果是tramsform的使用will-change提前告知浏览器可能的合成操作
+
+### Render progress
+
 1. 处理 HTML 标记并构建 DOM 树。
 
 2. 处理 CSS 标记并构建 CSSOM 树。
@@ -153,31 +165,10 @@ versioned URLs
 
 5. 将各个节点绘制到屏幕上。
 
+    
+
 ### 渲染阻塞
 
 css解析阻塞DOM的构建
 
 js解析阻塞DOM CSSOM的构建
-
-
-
-​    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
