@@ -1,5 +1,18 @@
 # ESM CommonJS AMD UMD
 
+## IIFE
+
+```tsx
+const workshop = (function Module() {
+  var teacher = "kyle";
+  return {
+    ask (question) {
+      console.log(teacher, question);
+    }
+  }
+})();
+```
+
 ## CommonJS
 
 资料：

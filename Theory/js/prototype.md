@@ -140,3 +140,5 @@ foo = {继承自Foo, Object
 a isInstanceof b 为true
 
 表示b的prototype 在 a的原型链上
+
+![image-20200607194937881](/Users/vincent/Library/Application Support/typora-user-images/image-20200607194937881.png)
