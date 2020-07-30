@@ -1,0 +1,14 @@
+{
+	"compilerOptions": {
+		"moduleResolution": "node",
+		"target": "es6",
+		"allowSyntheticDefaultImports": true,
+		"experimentalDecorators": true,
+		"baseUrl": ".",
+		"paths": {
+			"@/*": ["src/constant/*"],
+		}
+	},
+	"include": ["src"],
+	"exclude": ["node_modules"]
+}
