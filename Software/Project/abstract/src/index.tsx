@@ -59,14 +59,23 @@ export default function Root() {
   return (
     <>
       {Block}
-      <div style={{ position: 'absolute' }}>
-        <button style={{ border: '1px solid red' }} onClick={emotion10Start}>
+      <div className='absolute'>
+        <button
+          className='border-red-700 border-solid border-2'
+          onClick={emotion10Start}
+        >
           div 与 emotion10比较
         </button>
-        <button style={{ border: '1px solid red' }} onClick={emotion11Start}>
+        <button
+          className='border-red-700 border-solid border-2'
+          onClick={emotion11Start}
+        >
           div 与 emotion11比较
         </button>
-        <button style={{ border: '1px solid red' }} onClick={combineResult}>
+        <button
+          className='border-red-700 border-solid border-2'
+          onClick={combineResult}
+        >
           合并结果
         </button>
         {chartVisibility && <Chart />}

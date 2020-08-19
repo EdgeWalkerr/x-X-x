@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, ReactNode } from 'react';
-import { range } from 'lodash';
+import { range } from 'lodash-es';
 
 interface IPropType {
   num: number;

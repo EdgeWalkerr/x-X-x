@@ -9,7 +9,7 @@ import {
   Legend,
 } from 'recharts';
 import { timeList } from '@/state/xState';
-import { range } from 'lodash';
+import { range } from 'lodash-es';
 import { useLocalStorage } from '@rehooks/local-storage';
 
 type IData = {
