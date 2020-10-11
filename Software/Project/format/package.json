@@ -1,0 +1,14 @@
+{
+  "name": "format",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/EdgeWalkerr/format.git",
+  "author": "shenxiang.feng <shenxiang.feng@binance.com>",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.17.20"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.161"
+  }
+}

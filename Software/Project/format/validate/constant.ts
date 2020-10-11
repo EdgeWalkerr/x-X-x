@@ -1,0 +1,1 @@
+export const constant = (value) => Symbol(JSON.stringify(value))
