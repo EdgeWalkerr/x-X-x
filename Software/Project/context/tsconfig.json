@@ -1,0 +1,23 @@
+{
+	"compilerOptions": {
+		"jsx": "react",
+		"target": "es5",
+		"lib": [
+			"es6",
+			"dom",
+			"es2017"
+		],
+		"module": "commonjs",
+		"outDir": "dist",
+		"declaration": true,
+		"sourceMap": true,
+		"allowJs": true,
+	},
+	"include": [
+		"src/**/*"
+	],
+	"exclude": [
+		"node_modules",
+		"**/*.spec.ts"
+	]
+}
