@@ -1,20 +1,11 @@
-import React, { useCallback, useState } from 'react';
+import React from 'react';
+import List from './List'
 import './App.css';
 
 function App() {
-  const [num, setNum] = useState(0)
-  const addOne = useCallback(() => {
-    setNum(num => num + 1);
-  }, [])
-  debugger;
-  const func = useCallback(() => {
-    console.log(num);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [])
   return (
     <div className="App">
-      <button onClick={addOne}>add one</button>
-      <p>num: {num}</p>
+      <List />
     </div>
   );
 }
